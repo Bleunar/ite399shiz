@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'graduate';
+    src: url(Graduate-Regular.ttf);
+}
+.b{
+    border: 1px solid rgb(61, 61, 61);
+}
+.rowMax{
+    width: 100%;
+    height: 100%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    background-color: #EE6363;
+}
+.nav{
+    background-color: #6FF2DB;
+    padding-right: 0% !important;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.logo img{
+    height: 28px;
+}
+.logoImg{
+    height: 0px;
+    visibility: hidden;
+}
+.navNameOpt{
+    display: flex;
+    justify-content: space-between;
+}
+.navName{
+    display: flex;
+}
+.navName h4{
+    font-family:'graduate';
+    font-weight: 900;
+    font-size: xx-large;
+    display: flex;
+    margin: 0%;
+}
+.navOpt{
+    display: flex;
+    justify-content: end;
+}
+.navOpt ul{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    gap: 30px;
+}
+.navOpt li, p, a, u{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.navOpt p{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:smaller;
+}
+.navOpt a{
+    text-decoration: none;
+}
+.navOpt a:hover{
+    background-color: blue;
+    transition-duration: 1000ms;
+}
+.cart img{
+    height: 25px;
+}
+
+@media only screen and (max-width: 575px) {
+    .navName {
+        display: flex;
+        justify-content: center;
+    }
+    .logoImg{
+        height: 28px;
+        visibility: visible;
+    }
+    .logo img{
+        visibility: hidden;
+    }
+    .navOpt{
+        display: flex;
+        justify-content: center;
+    }
+  }
+.hero{
+    height: 100vh;
+    background-image: url(heroSectionBackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero img{
+    width: 100%;
+}
+.hero h1{
+    font-family: 'graduate';
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px black, 4px 4px gray;
+    position: relative;
+    top: 60vh;
+    left: 10vh;
+}
+.services{
+    height: 100px;
+    background-color: #ee7171;
+}
+/* Delicious food, delivered to your door */
+
+
+
