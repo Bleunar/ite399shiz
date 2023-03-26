@@ -2,12 +2,17 @@
     font-family: 'graduate';
     src: url(Graduate-Regular.ttf);
 }
-.b{
-    border: 1px solid rgb(61, 61, 61);
+
+
+
+
+
+
+.navContainer hr{
+    margin: 0px;
 }
-.rowMax{
-    width: 100%;
-    height: 100%;
+.b{
+    border: 2px solid red;
 }
 .center{
     display: flex;
@@ -15,110 +20,130 @@
     align-items: center;
 }
 .body{
-    background-color: #EE6363;
+    background: rgb(206, 99, 99);
 }
 .nav{
-    background-color: #6FF2DB;
-    padding-right: 0% !important;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    position:fixed;
+    background-color: #f3eed9;
+    z-index: +1;
+    
+    display: flex;
+    flex-direction: row;
 }
-
-.logo img{
-    height: 28px;
+.navContainer{
+    gap: 20px;
+    width: 100%;
+    padding: 5px;
 }
-.logoImg{
-    height: 0px;
-    visibility: hidden;
+.row{
+    margin: 0%!important; 
 }
-.navNameOpt{
+.logoName{
     display: flex;
     justify-content: space-between;
 }
-.navName{
-    display: flex;
-}
-.navName h4{
-    font-family:'graduate';
-    font-weight: 900;
-    font-size: xx-large;
-    display: flex;
-    margin: 0%;
-}
-.navOpt{
-    display: flex;
-    justify-content: end;
-}
-.navOpt ul{
-    display: flex;
-    margin: 0%;
-    padding: 0%;
-    gap: 30px;
-}
-.navOpt li, p, a, u{
-    list-style: none;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+.logoName div{
     display: flex;
     align-items: center;
-    text-decoration: none;
 }
-.navOpt p{
-    margin: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:smaller;
+.logoName img{
+    height: 30px;
+    margin-right: 10px;
 }
-.navOpt a{
-    text-decoration: none;
-}
-.navOpt a:hover{
-    background-color: blue;
-    transition-duration: 1000ms;
-}
-.cart img{
-    height: 25px;
-}
-
-@media only screen and (max-width: 575px) {
-    .navName {
-        display: flex;
-        justify-content: center;
-    }
-    .logoImg{
-        height: 28px;
-        visibility: visible;
-    }
-    .logo img{
-        visibility: hidden;
-    }
-    .navOpt{
-        display: flex;
-        justify-content: center;
-    }
-  }
-.hero{
-    height: 100vh;
-    background-image: url(heroSectionBackground.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.hero img{
-    width: 100%;
-}
-.hero h1{
+.logoName h1{
     font-family: 'graduate';
     font-weight: 900;
+    margin: 0px;
+}
+.navOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navOptions ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.navOptions li{
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.navOptions li:hover{
+    background-color: rgb(0, 0, 0);
     color: white;
-    text-shadow: 2px 2px black, 4px 4px gray;
+    transition: 500ms;
+}
+.navOptions a{
+    color: black;
+    text-decoration: none;
+}
+.navOptions a:hover{
+    color: white;
+    transition: 500ms;
+}
+.cart img{
+    height: 30px;
+}
+.hero{
+    background: url(heroSectBackground.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: auto;
+}
+.hero h1{
+    color: white;
+    width: fit-content;
+    text-shadow: 2px 2px rgb(173, 173, 173), 4px 4px rgb(78, 78, 78), 6px 6px black;
     position: relative;
-    top: 60vh;
-    left: 0vh;
+    top: 30%;
+    left: 3%;
+    font-family: 'graduate';
+}
+.hero a, u{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    height: 10%;
+    width: 10%;
+}
+.hero h3{
+    font-family: 'graduate';
+    position: relative;
+    top: 30%;
+    left: 3%;
+    background-color: #9d001e;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px;
 }
 .services{
-    height: 100px;
-    background-color: #ee7171;
+    height: 100vh;
+    background-color: #db7272;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* Delicious food, delivered to your door */
+.sectionCard{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 80%;
+    background-color: #798897;
+    border-radius: 15px;
+}
 
 
 
+@media only screen and (-webkit-scrollbar-track: 600px) {
+}
